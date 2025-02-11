@@ -95,7 +95,7 @@ function validatePassword() {
   document.getElementById('password-result').innerHTML = result;
 }
 
-
+// Vsibilidade da senha
 function togglePasswordVisibility() {
   const passwordField = document.getElementById('password');
   const showPasswordCheckbox = document.getElementById('show-password');
