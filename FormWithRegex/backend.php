@@ -8,6 +8,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
         exit;
     }
 
+    <?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $data = $_POST['data'] ?? 'Nenhum dado fornecido';
+    $filename = 'output.txt';
+
+    header('Content-Type: text/plain');
+    header("Content-Disposition: attachment; filename=$filename");
+
+    echo $data;
+    exit;
+}
+?>
+
     // Validação de CPF via PHP
     if ($_POST['action'] === 'validateCPF') {
         $cpf = preg_replace('/\D/', '', $_POST['cpf']);
