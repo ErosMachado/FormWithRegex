@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
         exit;
     }
 
-    <?php
+  
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $data = $_POST['data'] ?? 'Nenhum dado fornecido';
     $filename = 'output.txt';
@@ -19,9 +19,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo $data;
     exit;
 }
-?>
 
-    // Validação de CPF via PHP
+
+    // Validação de CPF via PHP (ainda emm testes)
     if ($_POST['action'] === 'validateCPF') {
         $cpf = preg_replace('/\D/', '', $_POST['cpf']);
         function isCPFValid($cpf) {
