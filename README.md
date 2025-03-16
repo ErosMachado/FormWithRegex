@@ -36,7 +36,7 @@ A simple yet powerful web application showcasing the practical applications of r
 
 ## 🌟 Usage Instructions
 
-1. Clone the repository and open the project in your favorite IDE or text editor.
+1. Clone the repository and open the project in your IDE.
 2. Open the `index.html` file in a browser.
 3. Test the features by inputting text, CPF, dates, or passwords into the provided form fields.
 4. Observe the results dynamically displayed on the page.
